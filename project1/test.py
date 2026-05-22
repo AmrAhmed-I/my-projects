@@ -3,6 +3,7 @@ from math import *
 # * This is a simple program to demonstrate string manipulation and user input in Python.
 before = input("enter the word:")
 print(f"After:{before.upper()}")  # * تحويل الحروف إلى حروف كبيرة
+print(f"After:{before.lower()}")  # * تحويل الحروف إلي حروف صغيرة
 print(f"After:{before.capitalize()}")  # * تحويل الحرف الأول إلى حرف كبير
 print(f"After:{before.title()}")  # * تحويل الحرف الأول من كل كلمة إلى حرف كبير
 print(f"After:{before.split()}")  # * تقسيم النص إلى قائمة من الكلمات
