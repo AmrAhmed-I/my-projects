@@ -230,3 +230,17 @@ elif num < 0:
     print("negative")
 else:
     print("zero")
+
+
+class Person:
+    def __init__(self, name, age):
+        self.name = name      # صفة اسم الشخص
+        self.age = age        # صفة عمر الشخص
+
+    def greet(self):
+        # طريقة تعرض تحية باسم الشخص وعمره
+        print(f"مرحباً! اسمي {self.name} وعمري {self.age} سنة.")
+
+# إنشاء مثيل (كائن) من الفئة
+person1 = Person("عمرو", 25)
+person1.greet()  # المخرجات المتوقعة: "مرحباً! اسمي عمرو وعمري 25 سنة."
