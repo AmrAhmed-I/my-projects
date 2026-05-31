@@ -24,11 +24,11 @@ print(min(3, 5, 7))  # ? الحصول على أصغر قيمة
 
 name = input("what is your name: ")  # ? الحصول على اسم المستخدم من خلال الإدخال
 while True:  # ? حلقة لا نهائية حتى يتم إدخال رقم صحيح
-    try:
-        age = int(input("Enter a number: "))
-        break
-    except:
-        pass
+  try:
+    age = int(input("Enter a number: "))
+    break
+  except:
+    pass
 print(name + " " + str(age))  # ?طباعة الاسم والعمر معًا
 
 # ! The program demonstrates list manipulation, and dictionary handling in Python.
@@ -48,10 +48,10 @@ x.extend(y)  #! دمج القائمتين
 print(x)
 
 days = (
-    "sat",
-    "sun",
-    "mon",
-    "tue",
+  "sat",
+  "sun",
+  "mon",
+  "tue",
 )  #! tuple لا يمكن تعديلها
 print(days[0])
 
@@ -61,10 +61,10 @@ print(info.get("grade"))  #! بدلاً من رفع خطأ None اذا لم يك
 
 # TODO search for a person's phone number in a dictionary based on user input.
 people = {
-    "ahmed": "0100000000",
-    "omar": "0123456789",
-    "rana": "0987654321",
-    "amr": "0111111111",
+  "ahmed": "0100000000",
+  "omar": "0123456789",
+  "rana": "0987654321",
+  "amr": "0111111111",
 }
 name = input("enter the name: ")
 if name in people:
@@ -74,22 +74,22 @@ else:
 
 # TODO search for a person's information in a list of dictionaries based on user input.
 people = [
-    {
-        "name": "ahmed",
-        "age": 21,
-        "city": "cairo",
-        "phone": "0100000000",
-    },
-    {"name": "mohammed", "age": 22, "city": "alex", "phone": "0123456789"},
-    {"name": "ali", "age": 20, "city": "giza", "phone": "0987654321"},
+  {
+    "name": "ahmed",
+    "age": 21,
+    "city": "cairo",
+    "phone": "0100000000",
+  },
+  {"name": "mohammed", "age": 22, "city": "alex", "phone": "0123456789"},
+  {"name": "ali", "age": 20, "city": "giza", "phone": "0987654321"},
 ]
 name = input("enter the name: ")
 for person in people:  # البحث في القائمة من خلال كل قاموس داخلها
-    if person["name"] == name:
-        print(
-            f"Name: {person['name']}, Age: {person['age']},City: {person['city']}, Phone: {person['phone']}"
-        )
-        break
+  if person["name"] == name:
+    print(
+      f"Name: {person['name']}, Age: {person['age']},City: {person['city']}, Phone: {person['phone']}"
+    )
+    break
 else:
     print("name not found")
 
@@ -110,14 +110,14 @@ print(x)
 
 # ? The program demonstrates how to define and call functions in Python.
 def greet():  # ?user-defined function.
-    print("hello world")
+  print("hello world")
 
 
 greet()
 
 
 def hello(name):  # ?function with parameter.
-    print("hello " + name)
+  print("hello " + name)
 
 
 hello(input("what's your name : "))
@@ -127,14 +127,14 @@ num2 = float(input("what's your number2: "))
 
 
 def sam(num1, num2):  # ?function with return value.
-    return num1 + num2
+  return num1 + num2
 
 
 print(sam(num1, num2))
 
 
 def calcdays(age):  # ?function with return value.
-    return "your age is: " + str(age * 365) + " days"
+  return "your age is: " + str(age * 365) + " days"
 
 
 # print(calcdays(25))
@@ -143,104 +143,120 @@ print(calcdays(int(input("what,s your age: "))))
 #! The program demonstrates how to use Conditional sentences in Python.
 egyption = input("are you egyption?: ").lower()
 if egyption in ["yes", "y"]:
-    print("i am egyptian")
+  print("i am egyptian")
 elif egyption in ["no", "n"]:
-    print("i am not egyptian")
+  print("i am not egyptian")
 else:
-    print("inter yes or no")
+  print("inter yes or no")
 
 password = input("inter your pass: ")
 if len(password) >= 8:
-    print("welcome")
+  print("welcome")
 elif len(password) < 8:
-    print("week")
+  print("week")
 else:
-    print("inter your pass")
+  print("inter your pass")
 
 email = input("inter your email: ")
 password = int(input("inter your pass: "))
 if email == "m@gmail.com" and password == 1234:
-    print("welcome")
+  print("welcome")
 elif email != "m@gmail.com" and password == 1234:
-    print("the email is not correct")
+  print("the email is not correct")
 elif email == "m@gmail.com" and password != 1234:
-    print("the password is not correct")
+  print("the password is not correct")
 else:
-    print("the email and password are not correct")
+  print("the email and password are not correct")
 
 
 degree = int(input("what's your degree: "))
 if degree >= 90:
-    print("excellent")
+  print("excellent")
 elif degree >= 80:
-    print("very good")
+  print("very good")
 elif degree >= 65:
-    print("good")
+  print("good")
 elif degree >= 50:
-    print("acceptable")
+  print("acceptable")
 else:
-    print("weak")
+  print("weak")
 
 
 x = int(input("what's your x: "))
 y = int(input("what's your y: "))
 if x > y:
-    print("x is greater than y")
+  print("x is greater than y")
 elif x < y:
-    print("x is less than y")
+  print("x is less than y")
 else:
-    print("x is equal to y")
+  print("x is equal to y")
 
 
 s = input("s: ")
 t = input("t: ")
 if s == t:
-    print("same")
+  print("same")
 else:
-    print("different")
+  print("different")
 
 age = int(input("what's your age: "))
 height = int(input("what's your height: "))
 if age <= 17 and height <= 160:
-    print("no")
+  print("no")
 elif age <= 50 and height <= 250:
-    print("yes")
+  print("yes")
 else:
-    print("No can't enter")
+  print("No can't enter")
 
 num1 = float(input("what's your number1: "))
 opreator = input()
 num2 = float(input("what's your number2: "))
 if opreator == "+":
-    print(num1 + num2)
+  print(num1 + num2)
 elif opreator == "-":
-    print(num1 - num2)
+  print(num1 - num2)
 elif opreator == "*":
-    print(num1 * num2)
+  print(num1 * num2)
 elif opreator == "/":
-    print(num1 / num2)
+  print(num1 / num2)
 else:
-    print("Error")
+  print("Error")
 
 
 num = float(input("inter your num: "))
 if num > 0:
-    print("positive")
+  print("positive")
 elif num < 0:
-    print("negative")
+  print("negative")
 else:
-    print("zero")
+  print("zero")
 
-
+# * The program demonstrates how to define and use classes in Python.
 class Person:
-    def __init__(self, name, age):
-        self.name = name      # صفة اسم الشخص
-        self.age = age        # صفة عمر الشخص
+  def __init__(self, name, age):
+    self.name = name      # صفة اسم الشخص
+    self.age = age        # صفة عمر الشخص
 
-    def greet(self):
-        # طريقة تعرض تحية باسم الشخص وعمره
-        print(f"مرحباً! اسمي {self.name} وعمري {self.age} سنة.")
+  def greet(self):
+    # طريقة تعرض تحية باسم الشخص وعمره
+    print(f"مرحباً! اسمي {self.name} وعمري {self.age} سنة.")
 
 # إنشاء مثيل (كائن) من الفئة
 person1 = Person("عمرو", 25)
-person1.greet()  # المخرجات المتوقعة: "مرحباً! اسمي عمرو وعمري 25 سنة."
+person1.greet()  
+
+person2 = Person("سارة", 30)
+person2.greet()  
+
+#
+class Point:
+  def __init__(self, x, y):
+    # تهيئة إحداثيات النقطة
+    self.x = x
+    self.y = y
+
+  def display(self):
+    print(f"النقطة عند ({self.x}, {self.y})")
+
+p = Point(3, 4)
+p.display()  # المخرجات المتوقعة: "النقطة عند (3, 4)"
