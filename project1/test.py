@@ -234,14 +234,14 @@ else:
 # * The program demonstrates how to define and use classes in Python.
 class Person:
   def __init__(self, name, age):
-    self.name = name      # صفة اسم الشخص
-    self.age = age        # صفة عمر الشخص
+    self.name = name      #* صفة اسم الشخص
+    self.age = age        #* صفة عمر الشخص
 
   def greet(self):
-    # طريقة تعرض تحية باسم الشخص وعمره
+    #* طريقة تعرض تحية باسم الشخص وعمره
     print(f"مرحباً! اسمي {self.name} وعمري {self.age} سنة.")
 
-# إنشاء مثيل (كائن) من الفئة
+#* إنشاء مثيل (كائن) من الفئة
 person1 = Person("عمرو", 25)
 person1.greet()  
 
@@ -251,7 +251,7 @@ person2.greet()
 #
 class Point:
   def __init__(self, x, y):
-    # تهيئة إحداثيات النقطة
+    #* تهيئة إحداثيات النقطة
     self.x = x
     self.y = y
 
@@ -259,4 +259,17 @@ class Point:
     print(f"النقطة عند ({self.x}, {self.y})")
 
 p = Point(3, 4)
-p.display()  # المخرجات المتوقعة: "النقطة عند (3, 4)"
+p.display()#
+
+class Circle:
+  pi = 3.14              #* صفة صفية مشتركة (ثابت ثابت لجميع الدوائر)
+
+  def __init__(self, radius):
+    self.radius = radius  #* صفة مثيل: نصف قطر كل دائرة
+
+  def area(self):
+    #* طريقة تحسب مساحة الدائرة
+    return Circle.pi * self.radius ** 2
+
+c = Circle(5)
+print(c.area()) # طباعة مساحة الدائرة ذات نصف قطر 5
