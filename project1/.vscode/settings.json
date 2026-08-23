@@ -53,5 +53,5 @@
   },
   "C_Cpp.vcFormat.space.beforeFunctionOpenParenthesis": "insert",
   "editor.detectIndentation": true,
-  
+  "todo-tree.ripgrep.ripgrep": "C:\\Users\\H\\rg.exe"
 } 

@@ -56,7 +56,9 @@ days = (
 print(days[0])
 
 info = {"name": "menna", "age": 24, "city": "cairo"}
+
 print(info)  #! طباعةالقاموس بالكامل
+
 print(info.get("grade"))  #! بدلاً من رفع خطأ None اذا لم يكن المفتاح موجودًا، سترجع
 
 # TODO search for a person's phone number in a dictionary based on user input.
@@ -68,7 +70,11 @@ people = {
 }
 name = input("enter the name: ")
 if name in people:
+<<<<<<< HEAD
     print(f"Name: {name}, Phone: {people[name]}")  
+=======
+    print(f"Name: {name}, Phone: {people[name]}")  #
+
 else:
     print("name not found")
 
@@ -111,11 +117,14 @@ print(x)
 # ? The program demonstrates how to define and call functions in Python.
 def greet():  # ?user-defined function.
   print("hello world")
+
 greet()
 
 
 def hello(name):  # ?function with parameter.
   print("hello " + name)
+
+
 hello(input("what's your name : "))
 
 num1 = float(input("what's your number1: "))
@@ -124,11 +133,19 @@ num2 = float(input("what's your number2: "))
 
 def sam(num1, num2):  # ?function with return value.
   return num1 + num2
+<<<<<<< HEAD
 print(sam(num1, num2))
 
 def calcdays(age):  # ?function with return value.
   return "your age is: " + str(age * 365) + " days"
 
+
+
+print(sam(num1, num2))
+
+
+def calcdays(age):  # ?function with return value.
+  return "your age is: " + str(age * 365) + " days"
 # print(calcdays(25))
 print(calcdays(int(input("what,s your age: "))))
 
