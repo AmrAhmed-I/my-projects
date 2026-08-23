@@ -70,9 +70,6 @@ people = {
 }
 name = input("enter the name: ")
 if name in people:
-<<<<<<< HEAD
-    print(f"Name: {name}, Phone: {people[name]}")  
-=======
     print(f"Name: {name}, Phone: {people[name]}")  #
 
 else:
@@ -133,7 +130,6 @@ num2 = float(input("what's your number2: "))
 
 def sam(num1, num2):  # ?function with return value.
   return num1 + num2
-<<<<<<< HEAD
 print(sam(num1, num2))
 
 def calcdays(age):  # ?function with return value.
